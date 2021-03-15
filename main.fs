@@ -10,7 +10,10 @@ let rec tribn n =
 // Problem 2
 let tribn2 n =
     // write your code here
-    0
+    if n = 0 then 0
+    else if n = 1 then 1
+    else if n = 2 then 1
+    else tribn (n-1) + tribn (n-2) + tribn (n-3)
 
 // Problem 3
 let rec last (lst:int list) = 
